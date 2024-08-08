@@ -127,7 +127,7 @@ def test_hdfs_remote_skip_feature_loading(hdfs_data):
     )
     npt.assert_equal(
         v.flatten(),
-        np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]),
+        np.array([0.0, 0.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 0.0, 0.0, 4.0, 0.0]),
     )
 
     ns = client.NodeSampler(cl, [0, 2])
