@@ -17,7 +17,7 @@ namespace snark
 {
 
 Metadata::Metadata(std::filesystem::path path, std::string config_path, std::shared_ptr<Logger> logger,
-                   bool skip_feature_loading = false)
+                   bool skip_feature_loading)
     : m_version(MINIMUM_SUPPORTED_VERSION), m_path(path.string()), m_config_path(config_path), m_watermark(-1)
 {
 
