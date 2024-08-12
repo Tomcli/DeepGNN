@@ -68,7 +68,7 @@ Metadata::Metadata(std::filesystem::path path, std::string config_path, std::sha
     m_partition_count = meta["partitions"].size();
     m_watermark = meta["watermark"];
     // Skip feature loading if requested. This is useful when the feature loading is done in a separate feature store.
-    if (skip_feature_loading == true) 
+    if (skip_feature_loading == true)
     {
         m_node_feature_count = 0;
         m_edge_feature_count = 0;
